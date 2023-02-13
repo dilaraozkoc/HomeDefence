@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class Soldier : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	public bool onTouch = false;
+	private void Update()
+	{
+		transform.Translate(Vector3.forward * (Time.deltaTime * 1f));
+	}
+	private void OnMouseDown()
+	{
+		onTouch = true;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+		gameObject.SetActive(false);
+
+		Debug.Log("Deðdi");
+	}
 }

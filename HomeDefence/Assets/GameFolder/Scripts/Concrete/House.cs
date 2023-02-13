@@ -13,15 +13,6 @@ public class House : MonoBehaviour
 	{
 		
 	}
-	private void ProduceSoldier()
-	{
-	}
-
-	private IEnumerator ProduceSoldierCorutine(float time)
-	{
-		yield return new WaitForSeconds(time);
-	}
-
 	private void UpdateHouse()
 	{
 
